@@ -13,13 +13,13 @@ services:
     networks:
       default:
         aliases:
-          - api.wb.local
-          - auth.wb.local
-          - ws.ranger.wb.local
-          - pma.wb.local
-          - eth.wb.local
-          - monitor.wb.local
+          - api.wb.bitchange.cash
+          - auth.wb.bitchange.cash
+          - ws.ranger.wb.bitchange.cash
+          - pma.wb.bitchange.cash
+          - eth.wb.bitchange.cash
+          - monitor.wb.bitchange.cash
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: monitor.wb.local'
+      traefik.frontend.rule: 'Host: monitor.wb.bitchange.cash'
       traefik.port: 8080
